@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="82802" started-at="2020-03-28T08:32:12Z" finished-at="2020-03-28T08:33:35Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="82802" started-at="2020-03-28T08:32:12Z" finished-at="2020-03-28T08:33:35Z">
+      <class name="tests.Travel_mmt_yatra_Test">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="launchBrowser" is-config="true" duration-ms="16448" started-at="2020-03-28T08:32:12Z" finished-at="2020-03-28T08:32:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="getPriceOfTheFirstFlight_mmt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="getPriceOfTheFirstFlight_mmt" duration-ms="43229" started-at="2020-03-28T08:32:29Z" data-provider="mmtAndYatraTest" finished-at="2020-03-28T08:33:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Travel_mmt_yatra_Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.makemytrip.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.yatra.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[6AM-12 Noon]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[6AM-12 Noon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPriceOfTheFirstFlight_mmt -->
+        <test-method status="PASS" signature="capturescreenshotAndGenerateExtentReport(org.testng.ITestResult)[pri:0, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="capturescreenshotAndGenerateExtentReport" is-config="true" duration-ms="1497" started-at="2020-03-28T08:33:12Z" finished-at="2020-03-28T08:33:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getPriceOfTheFirstFlight_mmt status=SUCCESS method=Travel_mmt_yatra_Test.getPriceOfTheFirstFlight_mmt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:tests.Travel_mmt_yatra_Test@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturescreenshotAndGenerateExtentReport -->
+        <test-method status="PASS" signature="getPriceOfTheFirstFlight_yatra(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="getPriceOfTheFirstFlight_yatra" duration-ms="19763" started-at="2020-03-28T08:33:14Z" data-provider="mmtAndYatraTest" finished-at="2020-03-28T08:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Travel_mmt_yatra_Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.makemytrip.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.yatra.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[6AM-12 Noon]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[6AM-12 Noon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPriceOfTheFirstFlight_yatra -->
+        <test-method status="PASS" signature="capturescreenshotAndGenerateExtentReport(org.testng.ITestResult)[pri:0, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="capturescreenshotAndGenerateExtentReport" is-config="true" duration-ms="658" started-at="2020-03-28T08:33:33Z" finished-at="2020-03-28T08:33:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getPriceOfTheFirstFlight_yatra status=SUCCESS method=Travel_mmt_yatra_Test.getPriceOfTheFirstFlight_yatra(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.Travel_mmt_yatra_Test@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturescreenshotAndGenerateExtentReport -->
+        <test-method status="PASS" signature="compareThePriceOfFlight_mmt_yatra()[pri:3, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="compareThePriceOfFlight_mmt_yatra" duration-ms="4" started-at="2020-03-28T08:33:34Z" depends-on-methods="tests.Travel_mmt_yatra_Test.getPriceOfTheFirstFlight_yatra, tests.Travel_mmt_yatra_Test.getPriceOfTheFirstFlight_mmt" finished-at="2020-03-28T08:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareThePriceOfFlight_mmt_yatra -->
+        <test-method status="PASS" signature="capturescreenshotAndGenerateExtentReport(org.testng.ITestResult)[pri:0, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="capturescreenshotAndGenerateExtentReport" is-config="true" duration-ms="1042" started-at="2020-03-28T08:33:34Z" finished-at="2020-03-28T08:33:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=compareThePriceOfFlight_mmt_yatra status=SUCCESS method=Travel_mmt_yatra_Test.compareThePriceOfFlight_mmt_yatra()[pri:3, instance:tests.Travel_mmt_yatra_Test@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturescreenshotAndGenerateExtentReport -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:tests.Travel_mmt_yatra_Test@706a04ae]" name="cleanup" is-config="true" duration-ms="5160" started-at="2020-03-28T08:33:35Z" finished-at="2020-03-28T08:33:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- tests.Travel_mmt_yatra_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

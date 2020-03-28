@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.Travel_mmt_yatra_Test">
+        <methods>
+          <include name="getPriceOfTheFirstFlight_yatra"/>
+          <include name="launchBrowser"/>
+          <include name="capturescreenshotAndGenerateExtentReport"/>
+          <include name="getPriceOfTheFirstFlight_mmt"/>
+          <include name="compareThePriceOfFlight_mmt_yatra"/>
+        </methods>
+      </class> <!-- tests.Travel_mmt_yatra_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
