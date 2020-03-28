@@ -34,67 +34,64 @@ import pages.MakeMyTrip_HomePage;
 import pages.Yatra_HomePage;
 
 public class BaseClass {
-	
+
 	protected WebDriver driver;
-	protected static String path=System.getProperty("user.dir");
+	protected static String path = System.getProperty("user.dir");
 	protected MakeMyTrip_HomePage mmt_homePg;
 	protected Yatra_HomePage yathra_homePg;
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest testLogger;
-	
-	
+
 	void intialization() {
-		mmt_homePg=new MakeMyTrip_HomePage(driver);
-		yathra_homePg=new Yatra_HomePage(driver);
-		
-		htmlReporter=new ExtentHtmlReporter(path+"\\Reports\\extent-report.html");
-		extent=new ExtentReports();
+		mmt_homePg = new MakeMyTrip_HomePage(driver);
+		yathra_homePg = new Yatra_HomePage(driver);
+
+		htmlReporter = new ExtentHtmlReporter(path + "\\Reports\\extent-report.html");
+		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 	}
 
-	
 	/**
 	 * This Method open the browser and Launch the Url
+	 * 
 	 * @param browser
 	 * @param url
 	 */
 	@BeforeClass
-	@Parameters({ "browser"})
+	@Parameters({ "browser" })
 	public void launchBrowser(String browser) {
 		if (browser.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", path+"\\drivers\\chromedriver.exe");
-			ChromeOptions options=new ChromeOptions();
+			System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
-			driver=new ChromeDriver(options);
+			driver = new ChromeDriver(options);
 
 		} else if (browser.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", path+"\\drivers\\geckodriver.exe");
-			driver=new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", path + "\\drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.ie.driver", path+"\\drivers\\IEDriverServer.exe");
-			driver=new InternetExplorerDriver();
+			System.setProperty("webdriver.ie.driver", path + "\\drivers\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
 		}
 		intialization();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 	}
-	
 
 	public void launchurl(String url) {
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
-	
-	
+
 	/**
 	 * This method will close all the driver instances
 	 */
 	@AfterClass
-	void tearDown(){
-	//	driver.quit();
+	void tearDown() {
+		// driver.quit();
 	}
-	
+
 	/**
 	 * Script to Capture Screenshot
 	 * 
@@ -115,8 +112,7 @@ public class BaseClass {
 		FileUtils.copyFile(Screenshot, destinationFile);
 		return destinationPath;
 	}
-	
-	
+
 	/**
 	 * capturescreen shot after test Pass/Fail And Generate ExtentReport
 	 * 
@@ -144,8 +140,7 @@ public class BaseClass {
 					+ testLogger.addScreenCaptureFromPath(screenShotLocation));
 		}
 	}
-	
-	
+
 	/**
 	 * Flush Extent Report-Append the HTML file with all the ended tests.
 	 */
